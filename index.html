@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valorant Tournament</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Valorant Tournament</p>
+      <h1>Rise to the top in the ultimate Valorant showdown</h1>
+      <p>Compete with the best teams, dominate the map, and claim the champion title.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#register">Register Your Team</a>
+        <a class="btn btn--secondary" href="#schedule">View Schedule</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__intro">
+          <h2>About the Tournament</h2>
+          <p>Prepare for a high-energy Valorant competition for teams of five. Show your strategy, aim, and teamwork in a thrilling bracket format.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card">
+            <h3>Format</h3>
+            <p>Group stage followed by single-elimination playoffs. Best-of-3 matches with a grand final best-of-5.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Prize Pool</h3>
+            <p>Top teams win trophies, prizes, and tournament recognition.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Map Pool</h3>
+            <p>Bind, Haven, Icebox, Split, and Breeze make up the competitive rotation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="schedule">
+      <div class="container">
+        <div class="section__intro">
+          <h2>Event Schedule</h2>
+          <p>Mark your calendar and get ready for the action across three exciting days.</p>
+        </div>
+        <div class="schedule-grid">
+          <article class="schedule-card">
+            <span class="schedule-card__date">Day 1</span>
+            <h3>Group Stage</h3>
+            <p>Opening matches, team introductions, and first elimination games.</p>
+          </article>
+          <article class="schedule-card">
+            <span class="schedule-card__date">Day 2</span>
+            <h3>Quarterfinals & Semifinals</h3>
+            <p>The top eight teams battle to secure a spot in the finals.</p>
+          </article>
+          <article class="schedule-card">
+            <span class="schedule-card__date">Day 3</span>
+            <h3>Grand Final</h3>
+            <p>Winner takes all, with the strongest teams facing off in a best-of-5 finale.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="teams">
+      <div class="container">
+        <div class="section__intro">
+          <h2>Featured Teams</h2>
+          <p>Discover the squads set to make the biggest plays in this Valorant tournament.</p>
+        </div>
+        <div class="teams-grid">
+          <article class="team-card">
+            <h3>Team Phoenix</h3>
+            <p>Aggressive entry fraggers with a strong tactical game plan.</p>
+          </article>
+          <article class="team-card">
+            <h3>Shadow Rush</h3>
+            <p>Calculated plays and clutch-ready strategies on every site.</p>
+          </article>
+          <article class="team-card">
+            <h3>Stormwatch</h3>
+            <p>Fast rotations and precise execution, built for the late game.</p>
+          </article>
+          <article class="team-card">
+            <h3>Neon Squad</h3>
+            <p>Electrifying pace and map control that keeps opponents on the back foot.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--register" id="register">
+      <div class="container register-panel">
+        <div>
+          <h2>Register Your Team</h2>
+          <p>Fill out the form to secure your slot in the Valorant tournament. Teams must have 5 players.</p>
+        </div>
+        <form class="register-form" id="registrationForm">
+          <label for="teamName">Team Name</label>
+          <input type="text" id="teamName" name="teamName" required placeholder="Enter your team name" />
+
+          <label for="captainName">Team Captain</label>
+          <input type="text" id="captainName" name="captainName" required placeholder="Team captain name" />
+
+          <label for="email">Contact Email</label>
+          <input type="email" id="email" name="email" required placeholder="captain@example.com" />
+
+          <label for="players">Player Count</label>
+          <input type="number" id="players" name="players" min="5" max="10" value="5" required />
+
+          <button class="btn btn--primary" type="submit">Submit Registration</button>
+          <p class="form-success" id="formSuccess" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Valorant Tournament • Best of luck to every team. Created by the Valorant community.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
